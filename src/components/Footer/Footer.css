@@ -1,0 +1,245 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 50px 10%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-content-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-content-left img {
+  width: 150px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.footer-content-left img:hover {
+  transform: scale(1.1);
+}
+
+.footer-content-left p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  justify-content: center; /* Center the icons */
+}
+
+.footer-social-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+  filter: drop-shadow(0px 0px 6px #FF6347);
+}
+
+.footer-content-center,
+.footer-content-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #FF6347; /* Tomato Color */
+  border-bottom: 2px solid #FF6347;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease;
+}
+
+.footer-content-center h2:hover,
+.footer-content-right h2:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-content-center ul li:hover,
+.footer-content-right ul li:hover {
+  color: #FF6347;
+  transform: translateX(5px);
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #bbb;
+  border-top: 1px solid #444;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-copyright::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: #FF6347;
+  animation: moving-line 3s infinite linear;
+}
+
+@keyframes moving-line {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* ✅ Responsive for 1050px */
+@media (max-width: 1050px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .footer-content-left img {
+    width: 120px;
+  }
+
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 16px;
+  }
+
+  .footer-content-center ul li,
+  .footer-content-right ul li {
+    font-size: 13px;
+  }
+  .footer-social-icons {
+    gap: 10px; /* Adjust gap for slightly smaller screens */
+  }
+  .footer-social-icons img {
+    width: 25px; /* Reduce icon size */
+    height: 25px;
+  }
+}
+
+/* ✅ Responsive for 900px */
+@media (max-width: 900px) {
+  .footer {
+    padding: 40px 5%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-left {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .footer-content-left img {
+    width: 100px;
+  }
+
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 15px;
+  }
+
+  .footer-content-center ul li,
+  .footer-content-right ul li {
+    font-size: 12px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+  .footer-social-icons {
+    gap: 8px; /* Further adjust the gap */
+  }
+
+  .footer-social-icons img {
+    width: 22px; /* Further reduce icon size */
+    height: 22px;
+  }
+}
+
+/* ✅ Responsive for 750px */
+@media (max-width: 750px) {
+  .footer {
+    padding: 30px 5%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-left img {
+    width: 90px;
+  }
+
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 14px;
+  }
+
+  .footer-content-center ul li,
+  .footer-content-right ul li {
+    font-size: 11px;
+  }
+
+  .footer-copyright {
+    font-size: 11px;
+  }
+  .footer-social-icons {
+    gap: 6px; /* Tighter gap for very small screens */
+  }
+
+  .footer-social-icons img {
+    width: 20px; /* Further reduce icon size */
+    height: 20px;
+  }
+}

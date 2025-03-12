@@ -1,0 +1,39 @@
+.app-download {
+    background-color: white;
+    color: #222;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-download p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .app-download br {
+    display: none;
+  }
+  
+  .app-download-platform {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .app-download-platform img {
+    width: 160px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .app-download-platform img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 99, 71, 0.6);
+  }
+  
